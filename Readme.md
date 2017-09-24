@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ренат Салмахаев](https://up.htmlacademy.ru/adaptive/12/user/496089).
-* Наставник: `Неизвестно`.
+* Наставник: `[Сергей Зубов]`.
 
 ---
 
