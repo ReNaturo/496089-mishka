@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-mobile.svg" width="86" height="35" alt="Mishka">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <span class="main-nav__item">
+              <a href="catalog">Каталог товаров</a>
+          </span>
+          <span class="main-nav__item">
+              <a href="#">Вязание на заказ</a>
+          </span>
+          <span class="main-nav__item">
+              <a href="search">Поиск по сайту</a>
+          </span>
+          <span class="main-nav__item">
+              <a href="#">Корзина: пока пуста</a>
+          </span>
+        </div>
+      </nav>
+    </header>
+    <main class="form-main">
+      <div class="form-header">
+        <h1 class="form-header__text">Вязание на заказ</h1>
+      </div>
+      <p class="form-intro">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <form class="big-form" method="get" action="result.php">
+        <div class="big-form__type">
+          <h2 class="big-form__header">Тип</h2>
+          <input name="interier" class="big-form__radio big-form_interier" type="radio" value="Аксессуар для
+интерьера" id="radio_inter"><label for="radio_inter">Аксессуар для
+интерьера</label>
+          <input name="toy" class="big-form__radio big-form_toy" type="radio" value="Аксессуар для
+интерьера" id="radio_toy"><label for="radio_toy">Детская игрушка</label>
+        </div>
+
+
+        <div class="big-form__color">
+          <h2 class="big-form__header">Цвет</h2>
+          <label for="white_checkbox">Белый</label>
+          <input name="color-white" type="checkbox" id="white_checkbox" value="Белый" checked class="big-form__white checkbox">
+          <label for="grey_checkbox">Серый</label>
+          <input name="color-grey" type="checkbox" id="grey_checkbox" value="Серый" checked class="big-form__grey checkbox">
+          <label for="tiffany_checkbox">&#171;Тиффани&#187;</label>
+          <input name="color-tiffany" type="checkbox" id="tiffany_checkbox" value="Тиффани" class="big-form__tiffany checkbox">
+          <label for="black_checkbox">Чёрный</label>
+          <input name="color-black" type="checkbox" id="black_checkbox" value="Чёрный" class="big-form__black checkbox">
+          <label for="pink_checkbox">Розовый</label>
+          <input name="color-pink" type="checkbox" id="pink_checkbox" value="Розовый" class="big-form__pink checkbox">
+          <label for="orange_checkbox">Оранжевый</label>
+          <input name="color-orange" type="checkbox" id="orange_checkbox" value="Оранжевый" class="big-form__orange checkbox">
+        </div>
+
+        <div class="big-form__full-name">
+          <h2 class="big-form__header">ФИО</h2>
+          <label for="name_input">Имя</label>
+          <input name="name" type="text" placeholder="Введите ваше имя *" required id="name_input" class="full-name__name">
+          <label for="surname_input">Фамилия</label>
+          <input name="surname" type="text" placeholder="Укажите фамилию *" required id="surname_input" class="full-name__surname">
+          <label for="patronymic_input">Фамилия</label>
+          <input name="patronymic" type="text" placeholder="Отчество, если желаете" required id="patronymic_input" class="full-name__patronymic">
+        </div>
+
+        <div class="big-form__tel">
+          <label for="tel_input" class="big-form__header">Тел</label>
+          <input name="tel" type="tel" required id="tel_input" class="big-form__tel__input" placeholder="+7 XXX XX XX*">
+        </div>
+
+        <div class="big-form__email">
+          <label for="email_input" class="big-form__header">E-mail</label>
+          <input name="email" type="email" required id="email_input" class="big-form__email__input" placeholder="Ваш Email*">
+        </div>
+
+        <div class="big-form__add">
+          <label for="add_input" class="big-form__header">Доп</label>
+          <textarea name="add" id="add_input" rows="8" class="big-form__add">Опишите все ваши пожелания к заказу</textarea>
+        </div>
+        <span class="big-form__note"><sub>*</sub>Поля, обязательные для заполнения</span>
+        <input type="submit" class="big-form__button" value="Заказать">
+      </form>
+    </main>
+    <footer class="main_footer">
+      <div class="social">
+        <div class="social__item">
+          <a href="#" class="social__link social__link--instagram">Instagram</a>
+        </div>
+        <div class="social__item">
+          <a href="#" class="social__link social__link--facebook">Facebook</a>
+        </div>
+        <div class="social__item">
+          <a href="#" class="social__link social__link--twitter">Twitter</a>
+        </div>
+        <div class="main-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
